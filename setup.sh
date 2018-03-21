@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 RCFILES='.bashrc .zshrc'
-SCRIPT_URL=https://raw.githubusercontent.com/wwalker/ssh-find-agent/master/ssh-find-agent.sh
+SCRIPT_URL='https://raw.githubusercontent.com/victorboissiere/ssh-agent-setup/master/ssh-find-agent.sh'
 SCRIPT_NAME=ssh-find-agent.sh
 SCRIPT_FOLDER=.ssh
 
