@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 
-RCFILES='~/.bashrc ~/.zshrc'
 SCRIPT_URL='https://raw.githubusercontent.com/victorboissiere/ssh-agent-setup/master/ssh-find-agent.sh'
 SCRIPT_NAME=ssh-find-agent.sh
-SCRIPT_FOLDER=.ssh
+SCRIPT_FOLDER=~/.ssh
 
 red=`tput setaf 1`
 green=`tput setaf 2`
@@ -15,7 +14,7 @@ printInfo()
   echo "${1}${2}${reset}"
 }
 
-for RCFILE in $RCFILES
+for RCFILE in ~/.bashrc ~/.zshrc
 do
   if [ -w $RCFILE ]; then
     echo "Setting up ssh-agent process persistence for $RCFILE..."
